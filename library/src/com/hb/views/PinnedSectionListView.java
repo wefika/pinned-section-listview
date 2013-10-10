@@ -43,7 +43,7 @@ public class PinnedSectionListView extends ListView {
 	}
 
 	/** Wrapper class for pinned section view and its position in the list. */
-	static class PinnedViewShadow {
+	protected static class PinnedViewShadow {
 		public View view;
 		public int position;
 	}
@@ -67,7 +67,7 @@ public class PinnedSectionListView extends ListView {
     PinnedViewShadow mRecycleShadow;
 
     /** shadow instance with a pinned view, can be null. */
-    PinnedViewShadow mPinnedShadow;
+    protected PinnedViewShadow mPinnedShadow;
 
     /** Pinned view Y-translation. We use it to stick pinned view to the next section. */
     int mTranslateY;
@@ -172,7 +172,7 @@ public class PinnedSectionListView extends ListView {
     }
 
 	/** Create shadow wrapper with a pinned view for a view at given position */
-	private void createPinnedShadow(int position) {
+	protected void createPinnedShadow(int position) {
 
 		// try to recycle shadow
 		PinnedViewShadow pinnedShadow = mRecycleShadow;
