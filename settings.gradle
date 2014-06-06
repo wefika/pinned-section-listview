@@ -1,0 +1,6 @@
+rootProject.name = "pinned-selection-listview"
+
+include 'pinned-selection-listview'
+include ':example'
+
+project(":pinned-selection-listview").projectDir = file("library")

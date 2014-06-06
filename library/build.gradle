@@ -1,8 +1,12 @@
 apply plugin: 'android-library'
+apply plugin: 'android-maven'
 
 dependencies {
     compile "com.android.support:support-v4:13.0.0"
 }
+
+group "com.hb.views"
+version "1.0"
 
 android {
 
